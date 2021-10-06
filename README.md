@@ -43,3 +43,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 - Install nvm
 - Use it to install node `nvm install node`
 - Get Yarn `npm install --global yarn`
+
+## Increase max size of watchers for VSCode
+
+The current limit can be viewed by running:
+
+`cat /proc/sys/fs/inotify/max_user_watches`
+
+The limit can be increased to its maximum by editing `/etc/sysctl.conf` (except on Arch Linux, read below) and adding this line to the end of the file: `fs.inotify.max_user_watches=524288`
+
+The new value can then be loaded in by running `sudo sysctl -p.
+
