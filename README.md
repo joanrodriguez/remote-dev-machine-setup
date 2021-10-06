@@ -42,3 +42,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 ## Get node
 - Install nvm
 - Use it to install node `nvm install node`
+- Get Yarn `npm install --global yarn`
