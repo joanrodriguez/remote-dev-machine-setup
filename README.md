@@ -54,3 +54,13 @@ The limit can be increased to its maximum by editing `/etc/sysctl.conf` (except 
 
 The new value can then be loaded in by running `sudo sysctl -p.
 
+## Install docker and docker-compose
+
+Please refer to the official guides.
+
+## Install Eslint globally
+- Because we are opening the root of the multi-repo with VScode, it cannot detect Eslint from the `node_modules`.
+- Therefore, install it locally
+
+## Install Hasura Cli
+- curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
